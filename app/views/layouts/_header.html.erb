@@ -1,28 +1,31 @@
-
-
-<nav class="navbar navbar-fixed-top">
-  <div class="container-fluid">
-    <!-- Brand and toggle get grouped for better mobile display -->
-    <div class="navbar-header">
-      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
-        <span class="sr-only">Toggle navigation</span>
-        <span class="icon-bar"></span>
-        <span class="icon-bar"></span>
-        <span class="icon-bar"></span>
-      </button>
-      <a class="navbar-brand" href="#">One months in rail</a>
+  
+    <nav class="navbar navbar-fixed-top">
+      
+        <div class="container-fluid">
+          <div class="navbar-header">
+     
+    <!-- .btn-navbar is used as the toggle for collapsed navbar content -->
+    <a class="btn .btn-navbar" data-toggle="collapse" data-target=".nav-collapse">
+    <span class="icon-bar"></span>
+    <span class="icon-bar"></span>
+    <span class="icon-bar"></span>
+    </a>
+     
+    <!-- Be sure to leave the brand out there if you want it shown -->
+    <a class="brand" href="#">One Month in Rails</a>
+     
+    <!-- Everything you want hidden at 940px or less, place within here -->
+    <div class="nav-collapse collapse">
+      <ul class="nav">
+      <li> <%= link_to "Home", root_path %></li>
+      <li><%= link_to "About", about_path %></li>
+    </ul>  
+    <ul class="nav pull-right">
+      <li><%= link_to "Login", '#'%></li>
+    </ul>
     </div>
 
-    <!-- Collect the nav links, forms, and other content for toggling -->
-    <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
-    <ul class="nav">
-       <li> <%=link_to "Home", root_path%></li>
-	   <li><%=link_to "About", about_path%></li>
-	</ul>
-
-  <ul class="nav pull-right">
-       <li> <%=link_to "Log In", "#"%></li>
      
-  </ul>
-  </div><!-- /.container-fluid -->
-</nav> 
+    </div>
+    </div>
+    </nav>
